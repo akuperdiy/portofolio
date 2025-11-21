@@ -118,7 +118,7 @@ function App() {
                   className="absolute inset-0 bg-gradient-to-r from-[#FFBE0B]/30 to-transparent z-10 pointer-events-none"
                 />
                 <img
-                  src="/akuperdiy.jpg"
+                  src="akuperdiy.jpg"
                   alt="Muhammad Ferdiansyah"
                   className="w-full h-full object-cover"
                 />
@@ -569,7 +569,7 @@ function App() {
       <footer className="py-8 px-6 border-t-4 border-black bg-black">
         <div className="container mx-auto text-center">
           <p className="text-white font-black text-lg">
-            © 2024 MUHAMMAD FERDIANSYAH • MADE WITH ❤️ & REACT
+            © 2025 MUHAMMAD FERDIANSYAH • MADE WITH ❤️ & REACT
           </p>
         </div>
       </footer>
