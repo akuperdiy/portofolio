@@ -27,7 +27,7 @@ function App() {
   };
 
   const bounceTransition = {
-    type: "spring",
+    type: "spring" as const,
     stiffness: 400,
     damping: 10
   };
@@ -99,7 +99,7 @@ function App() {
             <motion.div
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
-              transition={{ type: "spring", stiffness: 200, damping: 20 }}
+              transition={{ type: "spring" as const, stiffness: 200, damping: 20 }}
               className="relative"
             >
               <div className="w-80 h-80 mx-auto border-4 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] rotate-6 flex items-center justify-center relative overflow-hidden">
@@ -116,7 +116,7 @@ function App() {
                   className="absolute inset-0 bg-gradient-to-r from-[#FFBE0B]/30 to-transparent z-10 pointer-events-none"
                 />
                 <img
-                  src="/Gemini_Generated_Image_gm7b13gm7b13gm7b.jpg"
+                  src="public/akuperdiy.jpg"
                   alt="Muhammad Ferdiansyah"
                   className="w-full h-full object-cover"
                 />
@@ -306,7 +306,7 @@ function App() {
                 initial={{ opacity: 0, scale: 0, rotate: -180 }}
                 whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.05, type: "spring", stiffness: 300 }}
+                transition={{ delay: index * 0.05, type: "spring" as const, stiffness: 300 }}
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 className={`${skill.color} border-4 border-black p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all cursor-pointer`}
               >
