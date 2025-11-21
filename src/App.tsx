@@ -14,7 +14,9 @@ import {
   Sparkles,
   Star,
   Award,
-  Rocket
+  Rocket,
+  Instagram,
+  MessageCircle
 } from 'lucide-react';
 
 function App() {
@@ -116,7 +118,7 @@ function App() {
                   className="absolute inset-0 bg-gradient-to-r from-[#FFBE0B]/30 to-transparent z-10 pointer-events-none"
                 />
                 <img
-                  src="akuperdiy.jpg"
+                  src="/akuperdiy.jpg"
                   alt="Muhammad Ferdiansyah"
                   className="w-full h-full object-cover"
                 />
@@ -515,6 +517,38 @@ function App() {
                 <div>
                   <p className="font-black text-white">LINKEDIN</p>
                   <p className="font-bold text-white">Muhammad Ferdiansyah</p>
+                </div>
+              </motion.a>
+
+              <motion.a
+                href="https://instagram.com/perdiy.ans"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05, x: 4 }}
+                className="flex items-center gap-4 p-4 bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#515BD4] border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all"
+              >
+                <div className="w-12 h-12 bg-white border-2 border-black flex items-center justify-center">
+                  <Instagram size={24} />
+                </div>
+                <div>
+                  <p className="font-black text-white">INSTAGRAM</p>
+                  <p className="font-bold text-white">@perdiy.ans</p>
+                </div>
+              </motion.a>
+
+              <motion.a
+                href="https://wa.me/6285894349024"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05, x: 4 }}
+                className="flex items-center gap-4 p-4 bg-[#06FFA5] border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all"
+              >
+                <div className="w-12 h-12 bg-white border-2 border-black flex items-center justify-center">
+                  <MessageCircle size={24} />
+                </div>
+                <div>
+                  <p className="font-black text-black">WHATSAPP</p>
+                  <p className="font-bold text-black">+62 858-9434-9024</p>
                 </div>
               </motion.a>
             </div>
