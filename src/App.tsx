@@ -94,7 +94,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="beranda" className="min-h-screen flex items-center justify-center pt-32 pb-20 px-6">
+      <section id="beranda" className="min-h-screen flex items-center justify-center pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Avatar Blob */}
@@ -104,7 +104,7 @@ function App() {
               transition={{ type: "spring" as const, stiffness: 200, damping: 20 }}
               className="relative"
             >
-              <div className="w-80 h-80 mx-auto border-4 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] rotate-6 flex items-center justify-center relative overflow-hidden">
+              <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] rotate-6 flex items-center justify-center relative overflow-hidden">
                 <motion.div
                   animate={{
                     rotate: [0, 360],
@@ -147,7 +147,7 @@ function App() {
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
-                className="text-6xl md:text-8xl font-black leading-none"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black leading-none"
               >
                 MUHAMMAD
                 <br />
@@ -160,13 +160,13 @@ function App() {
                 transition={{ delay: 0.4 }}
                 className="space-y-3"
               >
-                <div className="bg-white border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="text-xl font-bold">
+                <div className="bg-white border-4 border-black p-3 sm:p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                  <p className="text-base sm:text-lg md:text-xl font-bold">
                     Mahasiswa Teknik Informatika Universitas Pamulang
                   </p>
                 </div>
-                <div className="bg-[#06FFA5] border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="text-lg font-bold">
+                <div className="bg-[#06FFA5] border-4 border-black p-3 sm:p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                  <p className="text-sm sm:text-base md:text-lg font-bold">
                     Web Developer • AI Enthusiast • Content Writer
                   </p>
                 </div>
@@ -182,7 +182,7 @@ function App() {
                   onClick={() => scrollToSection('projek')}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group px-8 py-4 bg-[#FF006E] border-4 border-black font-black text-white text-lg shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all flex items-center gap-2"
+                  className="group px-6 sm:px-8 py-3 sm:py-4 bg-[#FF006E] border-4 border-black font-black text-white text-base sm:text-lg shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all flex items-center gap-2"
                 >
                   LIHAT PROJEK
                   <ArrowRight className="group-hover:translate-x-2 transition-transform" />
@@ -191,7 +191,7 @@ function App() {
                   onClick={() => scrollToSection('kontak')}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white border-4 border-black font-black text-black text-lg shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all"
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-white border-4 border-black font-black text-black text-base sm:text-lg shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all"
                 >
                   HUBUNGI SAYA
                 </motion.button>
@@ -202,13 +202,13 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="tentang" className="py-20 px-6 bg-[#3A86FF] border-y-4 border-black">
+      <section id="tentang" className="py-12 sm:py-20 px-4 sm:px-6 bg-[#3A86FF] border-y-4 border-black">
         <div className="container mx-auto max-w-6xl">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-8xl font-black text-white mb-12 text-center drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-white mb-8 sm:mb-12 text-center drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]"
           >
             TENTANG SAYA
           </motion.h2>
@@ -220,12 +220,15 @@ function App() {
               viewport={{ once: true }}
               className="bg-white border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
             >
-              <h3 className="text-3xl font-black mb-4 text-[#FF006E]">WHO AM I?</h3>
-              <p className="text-lg font-bold leading-relaxed mb-4">
+              <h3 className="text-2xl sm:text-3xl font-black mb-4 text-[#FF006E]">WHO AM I?</h3>
+              <p className="text-base sm:text-lg font-bold leading-relaxed mb-4">
                 Halo! Saya Muhammad Ferdiansyah, mahasiswa aktif Teknik Informatika di Universitas Pamulang sejak 2023, berdomisili di Tangerang Selatan, Banten.
               </p>
-              <p className="text-lg font-bold leading-relaxed">
-                Saya passionate dalam Web Development, E-Commerce, Database Management, dan Artificial Intelligence. Dengan background RPL dari SMK Taruna Bangsa dan pengalaman di IDN Media!
+              <p className="text-base sm:text-lg font-bold leading-relaxed mb-4">
+                Saya passionate dalam Web Development, E-Commerce, Database Management, dan Artificial Intelligence. Dengan background RPL dari SMK Taruna Bangsa dan pengalaman di Futureloka.com, saya terus mengasah kemampuan dalam menciptakan solusi digital yang inovatif.
+              </p>
+              <p className="text-base sm:text-lg font-bold leading-relaxed">
+                Saya percaya bahwa teknologi adalah kunci untuk membuat perubahan positif. Melalui code, design, dan kreativitas, saya berusaha menghadirkan pengalaman digital yang meaningful dan user-friendly.
               </p>
             </motion.div>
 
@@ -236,7 +239,7 @@ function App() {
               className="space-y-6"
             >
               <div className="bg-[#FFBE0B] border-4 border-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-                <h3 className="text-2xl font-black mb-4 flex items-center gap-2">
+                <h3 className="text-xl sm:text-2xl font-black mb-4 flex items-center gap-2">
                   <Star className="w-6 h-6" />
                   PENDIDIKAN
                 </h3>
@@ -253,14 +256,14 @@ function App() {
               </div>
 
               <div className="bg-[#06FFA5] border-4 border-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-                <h3 className="text-2xl font-black mb-4 flex items-center gap-2">
+                <h3 className="text-xl sm:text-2xl font-black mb-4 flex items-center gap-2">
                   <Rocket className="w-6 h-6" />
                   PENGALAMAN
                 </h3>
                 <div className="space-y-3">
                   <div className="bg-white border-2 border-black p-3">
                     <p className="font-black">Penulis & Editor Artikel</p>
-                    <p className="font-bold text-sm">IDN Media • Magang/PKL</p>
+                    <p className="font-bold text-sm">Futureloka.com • Magang/PKL</p>
                   </div>
                   <div className="bg-white border-2 border-black p-3">
                     <p className="font-black">Sales Intern</p>
@@ -274,13 +277,13 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 px-6">
+      <section id="skills" className="py-12 sm:py-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-8xl font-black text-center mb-12"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-center mb-8 sm:mb-12"
           >
             MY <span className="text-[#8338EC]">SUPERPOWERS</span>
           </motion.h2>
@@ -321,13 +324,13 @@ function App() {
       </section>
 
       {/* Certifications Section */}
-      <section id="sertifikat" className="py-20 px-6 bg-[#FF006E] border-y-4 border-black">
+      <section id="sertifikat" className="py-12 sm:py-20 px-4 sm:px-6 bg-[#FF006E] border-y-4 border-black">
         <div className="container mx-auto max-w-6xl">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-8xl font-black text-white mb-12 text-center drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-white mb-8 sm:mb-12 text-center drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]"
           >
             SERTIFIKAT & AWARDS
           </motion.h2>
@@ -400,13 +403,13 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projek" className="py-20 px-6">
+      <section id="projek" className="py-12 sm:py-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-8xl font-black text-center mb-12"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-center mb-8 sm:mb-12"
           >
             PROJEK <span className="text-[#8338EC]">COMING SOON!</span>
           </motion.h2>
@@ -433,9 +436,9 @@ function App() {
                 <Rocket size={100} className="drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]" />
               </motion.div>
 
-              <h3 className="text-5xl font-black mb-6">STAY TUNED!</h3>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 sm:mb-6">STAY TUNED!</h3>
 
-              <p className="text-2xl font-bold mb-8 leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 leading-relaxed">
                 Lagi nyiapin projek-projek keren nih! Coding marathon mode: ON 🔥
               </p>
 
@@ -468,13 +471,13 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="kontak" className="py-20 px-6 bg-[#8338EC] border-t-4 border-black">
+      <section id="kontak" className="py-12 sm:py-20 px-4 sm:px-6 bg-[#8338EC] border-t-4 border-black">
         <div className="container mx-auto max-w-4xl">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-8xl font-black text-white mb-12 text-center drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-white mb-8 sm:mb-12 text-center drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]"
           >
             YUK NGOBROL!
           </motion.h2>
@@ -485,7 +488,7 @@ function App() {
             viewport={{ once: true }}
             className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]"
           >
-            <p className="text-2xl font-black text-center mb-8">
+            <p className="text-lg sm:text-xl md:text-2xl font-black text-center mb-6 sm:mb-8">
               Siap kolaborasi atau diskusi projek bareng? Hit me up!
             </p>
 
